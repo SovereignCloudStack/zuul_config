@@ -1,6 +1,7 @@
 - project:
     name: ^.*$
     default-branch: main
+    merge-mode: squash-merge
     gh_check:
       jobs: []
     gh_gate:
@@ -13,6 +14,7 @@
 - project:
     name: zuul/zuul-jobs
     default-branch: master
+    merge-mode: squash-merge
     gh_check:
       jobs: []
     gh_gate:
@@ -25,6 +27,7 @@
 - project:
     name: SovereignCloudStack/zuul_config
     default-branch: main
+    merge-mode: squash-merge
     gh_check:
       jobs:
         - noop
